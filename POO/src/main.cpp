@@ -1,4 +1,8 @@
+#include <iostream>
+using namespace std;
 
-int main() {
+int
+main() {
+	cout << "Hola Mundo :D" << endl;
 	return 0;
 }
