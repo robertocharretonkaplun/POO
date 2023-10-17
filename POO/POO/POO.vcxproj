@@ -129,11 +129,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Estudiante.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Person.cpp" />
+    <ClCompile Include="src\Villager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Banco.h" />
+    <ClInclude Include="Include\Command.h" />
+    <ClInclude Include="Include\Commons.h" />
+    <ClInclude Include="Include\Estudiante.h" />
+    <ClInclude Include="Include\MathLib.h" />
     <ClInclude Include="Include\Person.h" />
+    <ClInclude Include="Include\Villager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
