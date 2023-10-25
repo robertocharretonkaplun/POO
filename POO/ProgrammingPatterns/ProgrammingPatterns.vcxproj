@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{54ca1704-0b32-4af5-873f-0d5bf1978b54}</ProjectGuid>
-    <RootNamespace>POO</RootNamespace>
+    <ProjectGuid>{e3f13110-5820-463f-afa5-69d91673036a}</ProjectGuid>
+    <RootNamespace>ProgrammingPatterns</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -131,23 +131,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Enemy.cpp" />
-    <ClCompile Include="src\Estudiante.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Person.cpp" />
-    <ClCompile Include="src\Player.cpp" />
-    <ClCompile Include="src\Villager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Include\Banco.h" />
-    <ClInclude Include="Include\Command.h" />
-    <ClInclude Include="Include\Commons.h" />
-    <ClInclude Include="Include\Enemy.h" />
-    <ClInclude Include="Include\Estudiante.h" />
-    <ClInclude Include="Include\MathLib.h" />
-    <ClInclude Include="Include\Person.h" />
-    <ClInclude Include="Include\Player.h" />
-    <ClInclude Include="Include\Villager.h" />
+    <ClInclude Include="Include\AbstractFactory.h" />
+    <ClInclude Include="Include\Factory.h" />
+    <ClInclude Include="Include\Prerequisites.h" />
+    <ClInclude Include="Include\Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,6 +5,9 @@
 #include "MathLib.h"
 #include "Estudiante.h"
 
+#include "Enemy.h"
+#include "Player.h"
+
 int g_vida = 20;
 float g_money = 100;
 
@@ -39,6 +42,25 @@ Multiply(int a, int b) {
 
 int
 main() {
+	Player* Finn = new Player("Finn", 100);
+	Enemy* Lych = new Enemy("Lych", 500);
+	Finn->attack(Lych);
+	Lych->attack(Finn);
+
+	/*
+	vector<string> Nombres;
+	Nombres.push_back("Roberto");
+	Nombres.push_back("Jhon");
+	Nombres.push_back("Fabian");
+	Nombres.push_back("Diego");
+	Nombres.push_back("Alejandro");
+
+	for (int i = 0; i < Nombres.size(); i++)
+	{
+		cout << "Nombre: " << Nombres[i] << endl;
+	}
+
+
 	Villager pepe;
 	pepe.setName("Pepe");
 	cout << "Nombre: " << pepe.getName() << endl;
@@ -51,33 +73,6 @@ main() {
 	//cmd.command(command, pepe.tipo);
 	cmd.command(command, pepe);
 
-	/*
-	Vector2 position;
-	position.setVector2(3, 4);
-	position.print();
-	position.dotProduct(2);
-	position.print();
-	Vector2 pos2;
-	pos2.setVector2(3, 3);
-	int result = position.crossProduct(pos2);
-	cout << "Result: " << result << endl;
-	position.print();
-	*/
-
-	/*
-	cout << "Hola Mundo :D" << endl;
-	cout << "La vida es: " << vida << endl;
-	cout << "La vida es: " << GetHealth() << endl;
-	GetMoney();
-	cout << "El Dinero es: " << money << endl;
-
-	if (money >= 100)
-	{
-		cout << "Eres rico" << endl;
-	}
-
-	AddMoney(40);
-	*/
 
 	MathLib ml;
 	ml.sqrt(3);
@@ -103,6 +98,7 @@ main() {
 		delete esstudiantes[i];
 	}
 
+	*/
 	//int result = Multiply(5, 3);
 	return 0;
 }
